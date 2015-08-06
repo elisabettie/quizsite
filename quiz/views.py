@@ -36,6 +36,10 @@ def question(request, slug, number):
 	}
 	return render(request, "quiz/fragesida.html", context)
 
-def completed(request):
-
-	return render(request, "quiz/resultatsida.html")
+def completed(request, slug):
+	context = {
+	    	"correct": 12,
+	    	"total": 20,
+		"quiz_slug": slug,
+	}
+	return render(request, "quiz/resultatsidan.html", context)
