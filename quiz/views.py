@@ -22,7 +22,7 @@ def startpage(request):
 	}
 	return render(request, "quiz/quizkampenstartsida.html", context)
 
-def quiz(request):
+def quiz(request,slug):
 	return render(request, "quiz/quizkampen.html")
 
 def question(request):
