@@ -25,8 +25,16 @@ def startpage(request):
 def quiz(request,slug):
 	return render(request, "quiz/quizkampen.html")
 
-def question(request):
+def question(request, slug, number):
 	return render(request, "quiz/fragesida.html")
 
 def completed(request):
-	return render(request, "quiz/resultatsida.html")
+	context = {
+		"question_number": number,
+	    	"question": u"Hur många bultar har ölandsbron?",
+		"answer1": u"12",
+	   	"answer2": u"66 400",
+	    	"answer3": u"7 428 954",
+	    	"quiz_slug": slug,
+	}
+	return render(request, "quiz/resultatsida.html", context)
