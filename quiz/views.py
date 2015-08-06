@@ -8,7 +8,7 @@ def quiz(request):
 	return render(request, "quiz/quizkampen.html")
 
 def question(request):
-	return render(request, "quiz/fragesida")
+	return render(request, "quiz/fragesida.html")
 
 def completed(request):
 	return render(request, "quiz/resultatsida.html")
