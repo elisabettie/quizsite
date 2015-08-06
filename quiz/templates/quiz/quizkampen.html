@@ -13,14 +13,8 @@
 	<img src="/static/Obama.jpg"><img src="/static/marilyn.jpg"><img src="/static/miley.jpg">
 	<h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
-	
-	<h1><u>Great!</u></h1>
-	<h2>But not as many people are sure about who are living at the same time.<br>
-	Do you know what person that don't belong in the mix?</br></h2>
 
-<p><a href="{% url "question_page" quiz_slug 1 %}">Starta</a></p>
-
-	<a href="fragesida.html" class="myButton">Take this quiz and find out!</a>
+	<a href="{% url "question_page" quiz_slug 1 %}" class="myButton">Take this quiz and find out!</a>
 	</br>
 <br></br>
 <!---

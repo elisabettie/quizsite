@@ -10,16 +10,11 @@
 
 <!---<body background="miley.jpg">-->
 <body id="backgroundbild">
-{% for quiz_slug, quiz in quizzes.items %}
-   	 <p><a href="{% url "quiz_page" quiz_slug %}">
-		{{ quiz.name }}
-	</a></p>
-{% endfor %}
 
 	<div id ="start">
-			<a href="quizkampen.html" class="myButton">I know who this is!</a>
+			<a href="{% url "quiz_page" "klassiker" %}" class="myButton">I know who this is!</a>
 	</br>
-			<a href="https://www.google.es/search?q=10+best+quiz+online&amp;oq=10+best+quiz+online&amp;aqs=chrome..69i57.5657j0j7&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8"> <h3>search for anoter quiz</h3></a>
+			<a href="https://www.google.es/search?q=10+best+quiz+online&amp;oq=10+best+quiz+online&amp;aqs=chrome..69i57.5657j0j7&amp;sourceid=chrome&amp;es_sm=91&amp;ie=UTF-8"> <h3>This seems boring. I want another quiz!</h3></a>
 <br></br></div></div>
 
 </body>

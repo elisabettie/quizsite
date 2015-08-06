@@ -4,16 +4,10 @@ from django.shortcuts import render
 # Create your views here.
 quizzes = {
 	"klassiker": {
-   		"name": u"Klassiska böcker",
-	   	"description": u"Hur bra kan du dina klassiker?"
+   		"name": u"Great!",
+	   	"description": u"One person didn't live at the same time as two others. Do you know who?"
 	},
-	"fotboll": {
-	   	"name": u"Största fotbollslagen",
-	   	"description": u"Kan du dina lag?"
-	},
-	"kanda-hackare": {
-	    	"name": u"Världens mest kända hackare",
-	    	"description": u"Hackerhistoria är viktigt, kan du den?"	},
+
 }
 
 def startpage(request):
