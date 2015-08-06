@@ -10,14 +10,10 @@
 
 <body>
 	<br><br>
-	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
-	<h1>Your score:</h1>
-	<h2>Congratulations!
-		You did very well at this quiz.</h2>
+	<h1>Congratulations! Your score: {{ correct }} of {{ total }}</h1>
 	</br></br><br>
-	<a href="fragesida.html" class="myStartoverButton">Do the quiz again!</a>
+	<a href="{% url "start_page" %}" class="myStartoverButton">Back to start</a>
 	</br>
-<p><a href="{% url "start_page" %}">Till startsidan</a></p>
 <!---
 <div class="tabell">
 	<div class="row">
