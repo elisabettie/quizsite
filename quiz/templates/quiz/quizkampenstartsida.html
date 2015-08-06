@@ -10,9 +10,11 @@
 
 <!---<body background="miley.jpg">-->
 <body id="backgroundbild">
-	{% for quiz_slug, quiz in quizzes.items %}
-	<p>{{ quiz.name }}</p>
-	{% endfor %}
+{% for quiz_slug, quiz in quizzes.items %}
+   	 <p><a href="{% url "quiz_page" quiz_slug %}">
+		{{ quiz.name }}
+	</a></p>
+{% endfor %}
 
 	<div id ="start">
 			<a href="quizkampen.html" class="myButton">I know who this is!</a>
