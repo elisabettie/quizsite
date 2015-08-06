@@ -26,9 +26,6 @@ def quiz(request,slug):
 	return render(request, "quiz/quizkampen.html")
 
 def question(request, slug, number):
-	return render(request, "quiz/fragesida.html")
-
-def completed(request):
 	context = {
 		"question_number": number,
 	    	"question": u"Hur många bultar har ölandsbron?",
@@ -37,4 +34,8 @@ def completed(request):
 	    	"answer3": u"7 428 954",
 	    	"quiz_slug": slug,
 	}
-	return render(request, "quiz/resultatsida.html", context)
+	return render(request, "quiz/fragesida.html", context)
+
+def completed(request):
+
+	return render(request, "quiz/resultatsida.html")
