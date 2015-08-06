@@ -7,7 +7,6 @@ quizzes = {
    		"name": u"Great!",
 	   	"description": u"One person didn't live at the same time as two others. Do you know who?"
 	},
-
 }
 
 def startpage(request):
