@@ -12,14 +12,13 @@ from django.shortcuts import render
 
 def startpage(request):
 	context = {
-		"quizzes": quizzes,
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "quiz/quizkampenstartsida.html", context)
 
 def quiz(request,slug):
 	context = {
-		"quiz": quizzes[slug],
-		"quiz_slug": slug,
+		"quiz": Quiz.objects.get(slug=slug),
 	}
 	return render(request, "quiz/quizkampen.html", context)
 
