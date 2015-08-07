@@ -1,13 +1,14 @@
 # coding: utf-8
+from quiz.models import Quiz
 from django.shortcuts import render
 
 # Create your views here.
-quizzes = {
-	"klassiker": {
-   		"name": u"Great!",
-	   	"description": u"One person didn't live at the same time as two others. Do you know who?"
-	},
-}
+#quizzes = {
+#	"klassiker": {
+#   		"name": u"Great!",
+#	   	"description": u"One person didn't live at the same time as two others. Do you know who?"
+#	},
+#}
 
 def startpage(request):
 	context = {
