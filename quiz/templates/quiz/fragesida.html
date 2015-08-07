@@ -13,7 +13,7 @@
 <form action="{% url "question_page" quiz.slug question_number %}" method="post">
 {% csrf_token %}
 
-	<label><input type="image" name="answer" value="1" src="/static/Obama.jpg" class="svarsbild"></label><label><input type="image" name="answer" value="1" src="/static/marilyn.jpg" class="svarsbild"></label><label><input type="image" name="answer" value ="1" src="/static/miley.jpg" class="svarsbild"></label>
+	<label><input type="image" name="answer" value="1" class="svarsbild"></label><label><input type="image" name="answer" value="2" class="svarsbild"></label><label><input type="image" name="answer" value ="3" class="svarsbild"></label>
 	<br>
 	<h1>{{ question_number }}. {{ question }}</h1>
 <br></br>
