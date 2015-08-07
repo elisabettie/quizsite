@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<form action="{% url "question_page" quiz.slug question_number %}" method="post">
 
 	<input type="image" src="/static/Obama.jpg" class="svarsbild"><input type="image" src="/static/marilyn.jpg" class="svarsbild"><input type="image" src="/static/miley.jpg" class="svarsbild">
 	<br>
@@ -21,6 +22,7 @@
 	<a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="myButton">Next</a>
 <br></br>
 </br>
+</form>
 <!---
 <div class="tabell">
 	<div class="row">

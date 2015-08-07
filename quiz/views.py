@@ -1,6 +1,7 @@
 # coding: utf-8
 from quiz.models import Quiz
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 # Create your views here.
 #quizzes = {
@@ -26,6 +27,8 @@ def question(request, slug, number):
 	number = int(number)
 	quiz = Quiz.objects.get(slug=slug)
 	questions = quiz.questions.all()
+	if number > questions.count():
+		return redirect("completed_page", quiz.slug)
 	question = questions[number - 1]
 	context = {
     		"question_number": number,
