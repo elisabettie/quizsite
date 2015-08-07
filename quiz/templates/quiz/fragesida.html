@@ -16,11 +16,8 @@
 	<label><input type="image" name="answer" value="1" src="/static/Obama.jpg" class="svarsbild"></label><label><input type="image" name="answer" value="1" src="/static/marilyn.jpg" class="svarsbild"></label><label><input type="image" name="answer" value ="1" src="/static/miley.jpg" class="svarsbild"></label>
 	<br>
 	<h1>{{ question_number }}. {{ question }}</h1>
-
-	<a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="myButton">Next</a>
 <br></br>
 </br>
-<button type="submit">Nästa</button>
 </form>
 <!---
 <div class="tabell">
