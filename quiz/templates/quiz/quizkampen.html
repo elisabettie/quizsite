@@ -14,7 +14,7 @@
 	<h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
 
-	<a href="{% url "question_page" quiz_slug 1 %}" class="myButton">Take this quiz and find out!</a>
+	<a href="{% url "question_page" quiz.slug 1 %}" class="myButton">Take this quiz and find out!</a>
 	</br>
 <br></br>
 <!---
