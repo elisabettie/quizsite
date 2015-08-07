@@ -18,7 +18,7 @@
 	<p>{{ answer2 }}</p>
 	<p>{{ answer3 }}</p>
 
-	<a href="{% url "completed_page" quiz_slug %}" class="myButton">Next</a>
+	<a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="myButton">Next</a>
 <br></br>
 </br>
 <!---
