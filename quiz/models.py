@@ -20,7 +20,7 @@ class Question(models.Model):
 	def __unicode__(self):
 		return self.quiz.name + "/" + self.question
 
-#class Question(models.Model):
+#class Person(models.Model):
 #	quiz = models.ForeignKey(Quiz, related_name="questions")
 #	question = models.TextField()
 #	answer1 = models.CharField(max_length=100)
