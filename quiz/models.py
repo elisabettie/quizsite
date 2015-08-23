@@ -20,10 +20,8 @@ class Question(models.Model):
 	def __unicode__(self):
 		return self.quiz.name + "/" + self.question
 
-#class Person(models.Model):
-#	quiz = models.ForeignKey(Quiz, related_name="questions")
-#	question = models.TextField()
-#	answer1 = models.CharField(max_length=100)
-#	answer2 = models.CharField(max_length=100)
-#	answer3 = models.CharField(max_length=100)
-#	correct = models.PositiveIntegerField()
+class Person(models.Model):
+	name = models.TextField()
+	wikilink = models.CharField(max_length=100)
+	imgsrc = models.CharField(max_length=100)
+	yearclass = models.CharField(max_length=100)
