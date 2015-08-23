@@ -24,4 +24,5 @@ class Person(models.Model):
 	name = models.TextField()
 	wikilink = models.CharField(max_length=100)
 	imgsrc = models.CharField(max_length=100)
-	yearclass = models.CharField(max_length=100)
+	birth = models.PositiveIntegerField()
+	death = models.PositiveIntegerField()
