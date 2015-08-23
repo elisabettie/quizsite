@@ -13,7 +13,9 @@
 <form action="{% url "question_page" quiz.slug question_number %}" method="post">
 {% csrf_token %}
 
-	<label><input type="image" src="{{ answer1 }}" name="answer" value="1" class="svarsbild"></label><label><input type="image" src="{{ answer2 }}" name="answer" value="2" class="svarsbild"></label><label><input type="image" name="answer" src="{{ answer3 }}" value ="3" class="svarsbild"></label>
+	<input type="submit" style="background-image:{{ answer1 }}" name="answer" value="1" class="svarsbild" >
+	<input type="submit" style="background-image:{{ answer2 }}" name="answer" value="2" class="svarsbild">
+	<input type="submit" style="background-image:{{ answer3 }}" name="answer" value ="3" class="svarsbild">
 	<br>
 	<h1>{{ question_number }}. {{ question }}</h1>
 <br></br>
