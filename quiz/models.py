@@ -19,3 +19,11 @@ class Question(models.Model):
 
 	def __unicode__(self):
 		return self.quiz.name + "/" + self.question
+
+#class Question(models.Model):
+#	quiz = models.ForeignKey(Quiz, related_name="questions")
+#	question = models.TextField()
+#	answer1 = models.CharField(max_length=100)
+#	answer2 = models.CharField(max_length=100)
+#	answer3 = models.CharField(max_length=100)
+#	correct = models.PositiveIntegerField()
